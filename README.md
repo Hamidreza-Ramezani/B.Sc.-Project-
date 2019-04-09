@@ -12,5 +12,5 @@ two points worth mentioning are:
 employs user's feedback for Online learning. So you need to use it to some extent so that the Neural Net gets more training data and make a 
 better prediction. 
 
-2- You can use the touch mode easily by opening the App and selecting the touch mode. However, in order to use Camera mode and Image mode, you need to
-install OpenCV package first.   
+2- You can use the touch mode easily by opening the App and selecting the touch mode. However, in order to use Camera mode and Image mode, at first you need to
+install OpenCV package .   
