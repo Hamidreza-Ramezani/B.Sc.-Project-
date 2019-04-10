@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/navig_spacing" >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/navig_handwriting"
+        android:onClick="onNavigHandwritingClick"
+        android:padding="@dimen/navig_padding"
+        android:text="@string/navig_handwriting"
+        android:drawableLeft="@drawable/tch"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/navig_camera"
+        android:onClick="onNavigCameraClick"
+        android:padding="@dimen/navig_padding"
+        android:text="@string/navig_camera"
+        android:drawableLeft="@drawable/cmra" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/navig_image"
+        android:onClick="onNavigImageClick"
+        android:padding="@dimen/navig_padding"
+        android:text="@string/navig_image"
+        android:drawableLeft="@drawable/glry" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/navig_characters"
+        android:onClick="onNavigCharactersClick"
+        android:padding="@dimen/navig_padding"
+        android:text="@string/navig_characters"
+        android:drawableLeft="@drawable/three"/>
+
+
+
+
+
+</LinearLayout>

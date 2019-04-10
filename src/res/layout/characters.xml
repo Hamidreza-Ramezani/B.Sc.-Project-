@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/chars_title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <fragment
+        android:id="@+id/grid_view_fragment"
+        android:name="eu.uhliarik.charrec.gui.fragments.GridViewFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="eu.uhliarik.charrec.gui.fragments.GridViewFragment" >
+    </fragment>
+
+</LinearLayout>

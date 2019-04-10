@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="grid_spacing">20dp</dimen>
+    <dimen name="about_spacing">10dp</dimen>
+    <dimen name="about_padding">8dp</dimen>
+    <dimen name="notice_padding">35dp</dimen>
+    <dimen name="navig_spacing">15dp</dimen>
+    <dimen name="navig_padding">5dp</dimen>
+
+</resources>

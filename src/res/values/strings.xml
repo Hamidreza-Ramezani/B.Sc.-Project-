@@ -1,0 +1,88 @@
+<resources>
+
+    <!-- General -->
+    <string name="app_name">تشخیص رقم</string>
+    <string name="url">https://github.com/Hamidreza-Ramezani</string>
+    <string name="retrain_started_hw">Offline learning for handwriting recognition has been initiated.</string>
+    <string name="retrain_started_im">Offline learning for image and camera recognition has been initiated.</string>
+    <string name="training_notice">The neural network is being trained. This process can take several minutes.</string>
+    <string name="transferring_notice">The initial files are being transferred to external storage. This process usually takes around a minute.</string>
+    <string name="init_checksum_fail">Initial data is corrupted.</string>
+
+    <!-- Navigation Activity -->
+    <string name="navig_handwriting">ورودی از طریق صفحه نمایشگر لمسی</string>
+    <string name="navig_camera">ورودی دوربین</string>
+    <string name="navig_image">فایل تصویر</string>
+    <string name="navig_characters">لیست کاراکتر های شناخته شده </string>
+
+    <!-- Handwriting Activity -->
+    <string name="predict">پیشبینی شبکه </string>
+    <string name="clear">پاک کن</string>
+
+    <!-- Camera Activity -->
+    <string name="opencv_filter">Segmentation</string>
+    <string name="grid_image_desc">Character preview</string>
+    <string name="newchar_dialog_notice">Enter the character you would like to train:</string>
+
+    <!-- Image Activity -->
+    <string name="image_char_desc">The loaded character image</string>
+    <string name="image_select_file">Select an image with characters</string>
+    <string name="image_intro">Start by loading an image file in the menu</string>
+
+    <!-- Characters Activity -->
+    <string name="chars_title">با انتخاب هر کاراکتر نمونه های بیشتری به داده های آموزشی  اضافه کنید</string>
+
+    <!-- Menus -->
+    <string name="menu_settings">تنظیمات</string>
+    <string name="menu_add_char">اضافه کردن کاراکتر جدید به شبکه</string>
+    <string name="menu_load_image">بارگذاری عکس</string>
+
+    <!-- About Dialog -->
+    <string name="about_title">درباره ما</string>
+    <string name="about_body">این برنامه کاربردی توسط حمیدرضا رمضانی زیر نظر دکتر مهدی دهقان تخت فولادی ساخته شده است</string>
+    <string name="about_footer">دانشکده مهند سی کامپیوتر دانشگاه صنعتی امیرکبیر</string>
+
+    <!-- Prediction Dialog -->
+    <string name="predict_result">پیشبینی شبکه</string>
+    <string name="predict_correction">اصلاح</string>
+    <string name="invalid_char">لطفا فقط یک کاراکتر وارد کنید</string>
+    <string name="unknown_char">کاراکتر ناشناس!! لطفا کاراکتر درست وارد کنید</string>
+
+    <!-- External Storage Dialog -->
+    <string name="ext_storage_dialog_title">External storage unavailable</string>
+    <string name="ext_storage_dialog_body">External storage is required for correct behavior of the application, but it is currently unavailable. Please reconnect external storage or exit the application.</string>
+    <string name="ext_storage_exit">Exit</string>
+
+    <!-- Training Service -->
+    <string name="service_title">تشخیص کاراکتر</string>
+    <string name="service_body">فرآیند آموزش درحال انجام است </string>
+
+    <!-- Transfer Service -->
+    <string name="transfer_service_title">تشخیص کاراکتر</string>
+    <string name="transfer_service_body">انتقال فایل های اولیه</string>
+
+    <!-- Preferences -->
+    <string name="pref_save">Save character data</string>
+    <string name="pref_save_summ">The character data (instance features) are saved to a file after touch input</string>
+    <string name="pref_train_hw">Retrain handwriting network</string>
+    <string name="pref_train_hw_summ">Removes saved network weight files for the handwriting mode and initiates the offline learning process</string>
+    <string name="pref_train_im">Retrain image/camera network</string>
+    <string name="pref_train_im_summ">Removes saved network weight files for image and camera modes and initiates the offline learning process</string>
+    <string name="pref_algorithm">Optimization algorithm</string>
+    <string name="pref_algorithm_summ">The error minimization algorithm used for offline learning</string>
+
+    <string-array name="pref_algorithm_entries">
+        <item>Backpropagation</item>
+        <item>Rprop without backtracking</item>
+    </string-array>
+    <string-array name="pref_algorithm_values">
+        <item>backprop</item>
+        <item>rprop</item>
+    </string-array>
+
+    <string name="pref_algorithm_defvalue">rprop</string>
+    <string name="pref_online_update">Online learning rate</string>
+    <string name="pref_online_update_summ">The size of the weight-update when performing online learning. The default value is 0.3.</string>
+    <string name="pref_online_update_defvalue">0.3</string>
+
+</resources>

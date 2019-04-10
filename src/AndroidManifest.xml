@@ -1,0 +1,81 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eu.uhliarik.charrec"
+    android:versionCode="1"
+    android:versionName="1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".gui.activities.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gui.activities.HandwritingActivity"
+            android:label="@string/navig_handwriting"
+            android:parentActivityName=".gui.activities.MainActivity" >
+        </activity>
+        <activity
+            android:name=".gui.activities.CameraActivity"
+            android:label="@string/navig_camera"
+            android:parentActivityName=".gui.activities.MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/CameraTheme" >
+        </activity>
+        <activity
+            android:name=".gui.activities.ImageActivity"
+            android:label="@string/navig_image"
+            android:parentActivityName=".gui.activities.MainActivity" >
+        </activity>
+        <activity
+            android:name=".gui.activities.CharactersActivity"
+            android:label="@string/navig_characters"
+            android:parentActivityName=".gui.activities.MainActivity" >
+        </activity>
+        <activity
+            android:name=".gui.activities.SettingsActivity"
+            android:parentActivityName=".gui.activities.MainActivity" >
+        </activity>
+
+        <service
+            android:name=".services.TrainingService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/service_title" >
+        </service>
+        <service
+            android:name=".services.TransferService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/transfer_service_title" >
+        </service>
+    </application>
+
+</manifest>

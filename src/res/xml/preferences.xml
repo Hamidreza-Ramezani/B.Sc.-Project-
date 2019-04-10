@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_save"
+        android:summary="@string/pref_save_summ"
+        android:title="@string/pref_save" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_algorithm_defvalue"
+        android:dialogTitle="@string/pref_algorithm"
+        android:entries="@array/pref_algorithm_entries"
+        android:entryValues="@array/pref_algorithm_values"
+        android:key="pref_algorithm"
+        android:summary="@string/pref_algorithm_summ"
+        android:title="@string/pref_algorithm" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_online_update_defvalue"
+        android:dialogTitle="@string/pref_online_update"
+        android:key="pref_online_rate"
+        android:summary="@string/pref_online_update_summ"
+        android:title="@string/pref_online_update" />
+
+    <Preference
+        android:key="pref_train_hw"
+        android:summary="@string/pref_train_hw_summ"
+        android:title="@string/pref_train_hw" >
+    </Preference>
+    <Preference
+        android:key="pref_train_im"
+        android:summary="@string/pref_train_im_summ"
+        android:title="@string/pref_train_im" >
+    </Preference>
+
+</PreferenceScreen>

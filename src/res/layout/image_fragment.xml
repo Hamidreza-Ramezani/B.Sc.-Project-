@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_fragment_retain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/image_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/image_intro" />
+
+    <ImageView
+        android:id="@+id/image_char"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/image_char_desc"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_controls"
+        android:layout_gravity="bottom"
+        android:alpha="0.7"
+        android:background="@android:color/background_dark"
+        android:visibility="gone" >
+
+        <CheckBox
+            android:id="@+id/image_filter_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:paddingRight="10dp"
+            android:text="@string/opencv_filter"
+            android:textColor="@android:color/primary_text_dark" />
+
+        <SeekBar
+            android:id="@+id/image_threshold_seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/image_filter_check"
+            android:max="255"
+            android:progress="100" />
+    </RelativeLayout>
+
+</FrameLayout>

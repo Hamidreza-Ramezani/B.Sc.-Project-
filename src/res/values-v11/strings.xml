@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- Image Activity -->
+    <string name="image_intro">Start by loading an image file in the top right corner</string>
+
+</resources>
